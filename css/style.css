@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('../css/responsible.css');
 
 
 html, body {
@@ -19,7 +20,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, menu, form, .main-footer nav {
     font-weight: normal;
     font-style: normal;
     display: inline-block;
-    line-height: 1;
+    line-height: 1px;
     text-transform: none;
     letter-spacing: normal;
     word-wrap: normal;
@@ -493,6 +494,47 @@ aside section:last-child form button:hover {
     text-align: right;
     line-height: 1.5;
     margin-bottom: 15px;
+}
+
+/* Resposible */
+
+@media only screen and (max-width: 768px) {
+    header .container div {
+        width: auto;
+    }
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    section .container {
+        flex-wrap: wrap;
+    }
+
+    .left-main-content {
+        width: auto;
+        padding: 0   32px;
+    }
+
+    .left-main-content menu ol {
+        flex-direction: column;
+    }
+
+    .left-main-content menu ol li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .left-main-content menu ol li a {
+        font-size: 18px;
+    }
+
+    .left-main-content main header {
+        flex-direction: row;
+    }
+
+    .left-main-content main header h1 {
+        font-size: 16px;
+    }
 }
 
 
